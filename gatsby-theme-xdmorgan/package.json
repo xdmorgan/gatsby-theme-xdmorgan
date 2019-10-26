@@ -1,0 +1,10 @@
+{
+  "name": "gatsby-theme-xdmorgan",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "Dan Morgan <spamdanny@icloud.com> (@xdmorgan)",
+  "license": "MIT",
+  "peerDependencies": {
+    "gatsby": "^2.6.0"
+  }
+}
