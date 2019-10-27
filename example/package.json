@@ -6,11 +6,13 @@
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier ."
   },
   "dependencies": {
     "gatsby": "^2.17.4",
-    "gatsby-theme-minimal": "^1.0.0",
+    "gatsby-theme-xdmorgan": "^0.1.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   }
