@@ -15,8 +15,10 @@ program.command("lint [path]").action((p = ".") => {
   spawn.sync("yarn", cmd, { stdio: "inherit" });
 });
 
-program.command("other").action(() => {
-  console.log("hello");
+program.command("test [path]").action((p = "src") => {
+  const cmd = ["jest", path.join(callerwd, p)];
+
+  spawn.sync("yarn", cmd, { stdio: "inherit" });
 });
 
 program.parse(process.argv);
