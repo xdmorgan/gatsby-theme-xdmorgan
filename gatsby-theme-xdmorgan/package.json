@@ -5,10 +5,12 @@
   "author": "Dan Morgan <spamdanny@icloud.com> (@xdmorgan)",
   "license": "MIT",
   "bin": {
-    "gtxdm": "cli.js"
+    "gtxdm": "cli/gtxdm.js"
   },
   "dependencies": {
     "classnames": "^2.2.6",
+    "commander": "^3.0.2",
+    "cross-spawn": "^7.0.1",
     "gatsby-plugin-google-gtag": "^1.1.14",
     "gatsby-plugin-layout": "^1.1.13",
     "gatsby-plugin-react-helmet": "^3.1.13",
@@ -16,7 +18,8 @@
     "gatsby-plugin-sharp": "^2.2.32",
     "gatsby-plugin-typescript": "^2.1.15",
     "gatsby-transformer-sharp": "^2.3.0",
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.0",
+    "react-helmet": "^5.2.1"
   },
   "peerDependencies": {
     "gatsby": "^2.6.0"
