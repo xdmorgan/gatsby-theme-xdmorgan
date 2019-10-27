@@ -7,8 +7,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "lint:eslint": "eslint .",
-    "lint:prettier": "prettier ."
+    "lint:eslint": "yarn gtxdm lint:eslint"
   },
   "dependencies": {
     "gatsby": "^2.17.4",

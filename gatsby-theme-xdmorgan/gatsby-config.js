@@ -13,6 +13,7 @@ module.exports = ({ gtag }) => {
       `gatsby-transformer-sharp`,
       `gatsby-plugin-sharp`,
       `gatsby-plugin-layout`,
+      `gatsby-plugin-react-helmet`,
       {
         resolve: `gatsby-plugin-google-gtag`,
         options: {
