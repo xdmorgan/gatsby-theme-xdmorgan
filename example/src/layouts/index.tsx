@@ -1,7 +1,11 @@
 import React from "react";
-export default ({ children }) => (
-  <div>
-    <div>layout!</div>
-    {children}
-  </div>
-);
+import Header from "../components/header";
+
+export default function Layout({ children }) {
+  return (
+    <div>
+      <Header />
+      <main>{children}</main>
+    </div>
+  );
+}
