@@ -1,0 +1,14 @@
+{
+  "name": "gatsby-theme-xdmorgan-workspace",
+  "private": true,
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn workspace example build"
+  },
+  "workspaces": [
+    "gatsby-theme-xdmorgan",
+    "example"
+  ]
+}
