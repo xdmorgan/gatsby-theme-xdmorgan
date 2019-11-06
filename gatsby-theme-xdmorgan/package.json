@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-xdmorgan",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "main": "index.js",
   "author": "Dan Morgan <spamdanny@icloud.com> (@xdmorgan)",
   "license": "MIT",
@@ -8,11 +8,25 @@
     "gtxdm": "cli/gtxdm.js"
   },
   "dependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
+    "@typescript-eslint/eslint-plugin": "^2.3.0",
+    "@typescript-eslint/parser": "^2.5.0",
+    "babel-jest": "^24.9.0",
     "classnames": "^2.2.6",
     "commander": "^3.0.2",
     "cross-spawn": "^7.0.1",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-typescript": "^6.0.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
     "gatsby-image": "^2.2.30",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-google-gtag": "^1.1.14",
@@ -27,30 +41,14 @@
     "gatsby-source-filesystem": "^2.1.35",
     "gatsby-transformer-remark": "^2.6.32",
     "gatsby-transformer-sharp": "^2.3.0",
+    "jest": "^24.9.0",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.13.0",
-    "react-helmet": "^5.2.1"
+    "prettier": "^1.18.2",
+    "react-helmet": "^5.2.1",
+    "typescript": "^3.6.4"
   },
   "peerDependencies": {
     "gatsby": "^2.6.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/preset-typescript": "^7.6.0",
-    "@typescript-eslint/eslint-plugin": "^2.3.0",
-    "@typescript-eslint/parser": "^2.5.0",
-    "babel-jest": "^24.9.0",
-    "eslint": "^6.1.0",
-    "eslint-config-airbnb-typescript": "^6.0.0",
-    "eslint-config-prettier": "^6.5.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-react-hooks": "^1.7.0",
-    "jest": "^24.9.0",
-    "prettier": "^1.18.2",
-    "typescript": "^3.6.4"
   }
 }

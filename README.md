@@ -1,10 +1,16 @@
-# gatsby-theme-xdmorgan
+# `gatsby-theme-xdmorgan`
 
-wip
+⚠️ Intended to be a drop-in solution for personal use and an experiment in providing a full-project toolkit using the Gatsby Theme workflow. Work in progress, docs soon&hellip; maybe.
+
+## Theme Docs
+
+See [gatsby-theme-xdmorgan/README.md](gatsby-theme-xdmorgan/README.md)
+
+## Example Docs
+
+See [example/README.md](example/README.md)
 
 ## TODO
 
-- Add an install script to 'import' eslintrc's etc?
-- Get ESLint/Prettier/TypeScript/Jest working together
-- seo component vars in config object
-- lint etc. via module-provided cli scripts
+- [ ] Look into copying necessary config files and/or modifying downstream package.json directly to include the necessary scripts
+- [ ] Pass-through flags to gtxdm jest and eslint (rename from test/lint)
