@@ -15,7 +15,8 @@
 
 - TypeScript
 - Sass
-- Jest & ESLint (via CLI)
+- Jest + testing-library/react
+- ESLint Airbnb+
 - MDX
 - Google Analytics
 - Google Fonts
