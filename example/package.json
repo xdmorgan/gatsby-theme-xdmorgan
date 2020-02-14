@@ -5,15 +5,14 @@
   "author": "christopherbiscardi <chris@christopherbiscardi.com> (@chrisbiscardi)",
   "license": "MIT",
   "scripts": {
+    "start": "yarn develop",
     "develop": "gatsby develop",
-    "build": "gatsby build",
-    "lint": "yarn gtxdm lint src",
-    "test": "yarn gtxdm test src"
+    "build": "gatsby build"
   },
   "dependencies": {
-    "gatsby": "^2.17.4",
-    "gatsby-theme-xdmorgan": "^1.0.0",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "gatsby": "^2.19.17",
+    "gatsby-theme-xdmorgan": "^2.0.0-0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   }
 }
