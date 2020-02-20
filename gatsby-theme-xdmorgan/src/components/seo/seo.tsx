@@ -49,7 +49,6 @@ export default class SEO extends React.Component<Props, {}> {
           <StaticQuery
             query={detailsQuery}
             render={data => {
-              console.log(data);
               const query: SiteMeta = data.sitePlugin.pluginOptions.seo;
               const options = {
                 site: {
