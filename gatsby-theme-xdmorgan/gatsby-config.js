@@ -62,7 +62,7 @@ module.exports = ({ gtag, gfonts, manifest, filesystem }) => {
       gfonts
         ? {
             resolve: `gatsby-plugin-google-fonts`,
-            options: { fonts: gfonts }
+            options: { fonts: gfonts, display: "swap" }
           }
         : null
     ].filter(config => config !== null)

@@ -13,6 +13,7 @@ interface Props {
   lang?: string;
   title?: string;
   canonical?: string;
+  appendTitle?: boolean;
 }
 
 interface SiteMeta {
@@ -57,7 +58,9 @@ export default function SEO(props: Props) {
                 blogPost: props.blogPost,
                 description: props.description || query.description,
                 image: props.image || query.logo,
-                title: mergeTitles(props.title, query.title),
+                title: props.appendTitle
+                  ? mergeTitles(props.title, query.title)
+                  : props.title,
                 url: query.url + location.pathname
               }
             };
@@ -117,7 +120,8 @@ export default function SEO(props: Props) {
 
 SEO.defaultProps = {
   lang: `en`,
-  schema: false
+  schema: false,
+  appendTitle: true
 };
 
 const detailsQuery = graphql`
