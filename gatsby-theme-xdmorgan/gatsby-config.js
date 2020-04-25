@@ -18,15 +18,19 @@ module.exports = ({ gtag, gfonts, manifest, filesystem }) => {
       `gatsby-plugin-sharp`,
       `gatsby-plugin-layout`,
       `gatsby-plugin-react-helmet`,
-      ...(filesystem || []).map(options => ({
+      ...(filesystem || []).map((options) => ({
         resolve: `gatsby-source-filesystem`,
-        options
+        options,
       })),
       {
         resolve: `gatsby-transformer-remark`,
         options: {
-          plugins: [`gatsby-remark-images`, `gatsby-remark-autolink-headers`]
-        }
+          plugins: [
+            `gatsby-remark-images`,
+            `gatsby-remark-autolink-headers`,
+            `gatsby-remark-copy-linked-files`,
+          ],
+        },
       },
       {
         resolve: `gatsby-plugin-mdx`,
@@ -36,35 +40,35 @@ module.exports = ({ gtag, gfonts, manifest, filesystem }) => {
               resolve: `gatsby-remark-images`,
               options: {
                 maxWidth: 1200,
-                linkImagesToOriginal: false
-              }
+                linkImagesToOriginal: false,
+              },
             },
-            `gatsby-remark-autolink-headers`
-          ]
-        }
+            `gatsby-remark-autolink-headers`,
+          ],
+        },
       },
       {
         resolve: `gatsby-plugin-google-gtag`,
         options: {
-          trackingIds: [gtag]
+          trackingIds: [gtag],
         },
         gtagConfig: {
           anonymize_ip: true,
-          cookie_expires: 0
-        }
+          cookie_expires: 0,
+        },
       },
       manifest
         ? {
             resolve: `gatsby-plugin-manifest`,
-            options: manifest
+            options: manifest,
           }
         : null,
       gfonts
         ? {
             resolve: `gatsby-plugin-google-fonts`,
-            options: { fonts: gfonts, display: "swap" }
+            options: { fonts: gfonts, display: "swap" },
           }
-        : null
-    ].filter(config => config !== null)
+        : null,
+    ].filter((config) => config !== null),
   };
 };
