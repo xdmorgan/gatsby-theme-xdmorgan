@@ -44,6 +44,7 @@ module.exports = ({ gtag, gfonts, manifest, filesystem }) => {
               },
             },
             `gatsby-remark-autolink-headers`,
+            `gatsby-remark-copy-linked-files`,
           ],
         },
       },
